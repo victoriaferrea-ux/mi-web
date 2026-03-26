@@ -1,0 +1,1547 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dra. Victoria Ferrea · Dermatóloga y Médica Estética en Palermo y Vicente López, Buenos Aires. Acné, rosácea, melasma, salud capilar y medicina estética.">
+<meta name="keywords" content="dermatologa, medicina estetica, acne, rosacea, melasma, lunares, capilar, alopecia, Palermo, Vicente Lopez, Buenos Aires">
+<meta property="og:title" content="Dra. Victoria Ferrea · Dermatóloga">
+<meta property="og:description" content="Atención médica personalizada en dermatología, medicina estética y salud capilar. Palermo y Vicente López, Buenos Aires.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#3a2e28">
+<title>Dra. Victoria Ferrea · Dermatóloga</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #faf8f5;
+  --warm-white: #f5f2ed;
+  --stone: #e8e2d9;
+  --taupe: #c4b8a8;
+  --mink: #9e9089;
+  --bark: #6b5d52;
+  --espresso: #3a2e28;
+  --sage: #8a9e8c;
+  --sage-light: #b8c9b9;
+  --sage-dark: #5a7a5c;
+  --gold: #c9a96e;
+  --gold-light: #e8d5a8;
+  --text: #2c2420;
+  --text-light: #6b5d52;
+  --wa-green: #25D366;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--text); font-weight: 300; line-height: 1.7; overflow-x: hidden; }
+.topbar { background: var(--espresso); color: var(--stone); font-size: 12px; letter-spacing: 0.08em; padding: 8px 40px; display: flex; justify-content: space-between; align-items: center; font-weight: 400; }
+.topbar a { color: var(--sage-light); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+.topbar a:hover { color: white; }
+nav { background: var(--cream); padding: 0 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--stone); position: sticky; top: 0; z-index: 100; height: 72px; }
+.nav-brand { display: flex; flex-direction: column; line-height: 1.1; cursor: pointer; }
+.nav-brand .name { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 500; color: var(--espresso); letter-spacing: 0.03em; }
+.nav-brand .tagline { font-size: 10px; letter-spacing: 0.18em; color: var(--mink); text-transform: uppercase; font-weight: 400; }
+.nav-links { display: flex; list-style: none; gap: 0; align-items: center; }
+.nav-links li { position: relative; }
+.nav-links > li > a { display: block; padding: 0 11px; height: 72px; line-height: 72px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--bark); text-decoration: none; font-weight: 500; transition: color 0.2s; white-space: nowrap; }
+.nav-links > li > a:hover { color: var(--espresso); }
+.nav-links li:hover .dropdown { display: block; }
+.dropdown { display: none; position: absolute; top: 72px; left: 0; background: white; min-width: 220px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); border-top: 2px solid var(--sage); z-index: 200; }
+.dropdown a { display: block; padding: 12px 20px; font-size: 12px; letter-spacing: 0.08em; color: var(--bark); text-decoration: none; text-transform: uppercase; font-weight: 400; transition: all 0.2s; border-bottom: 1px solid var(--stone); }
+.dropdown a:hover { background: var(--warm-white); color: var(--espresso); padding-left: 26px; }
+.nav-cta { background: var(--sage-dark) !important; color: white !important; padding: 10px 20px !important; height: auto !important; line-height: 1 !important; border-radius: 2px; margin-left: 8px; }
+.nav-cta:hover { background: var(--espresso) !important; }
+.page { display: none; }
+.page.active { display: block; }
+.hero { position: relative; height: calc(100vh - 104px); min-height: 580px; overflow: hidden; display: flex; align-items: center; }
+.hero-img { position: absolute; inset: 0; background-size: cover; background-position: center 20%; }
+.hero-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(105deg, rgba(58,46,40,0.75) 0%, rgba(58,46,40,0.38) 55%, transparent 100%); }
+.hero-content { position: relative; z-index: 2; padding: 0 80px; max-width: 680px; animation: fadeUp 1s ease both; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+.hero-eyebrow { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sage-light); font-weight: 500; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.hero-eyebrow::after { content: ''; display: block; width: 40px; height: 1px; background: var(--sage-light); }
+.hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(42px, 5vw, 68px); font-weight: 400; color: white; line-height: 1.1; margin-bottom: 20px; letter-spacing: -0.01em; }
+.hero h1 em { font-style: italic; color: var(--gold-light); }
+.hero-sub { font-size: 15px; color: rgba(255,255,255,0.82); margin-bottom: 36px; font-weight: 300; max-width: 480px; line-height: 1.7; }
+.btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--sage-dark); color: white; padding: 14px 30px; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; text-decoration: none; font-family: 'Jost', sans-serif; border-radius: 2px; transition: all 0.25s; cursor: pointer; border: none; }
+.btn-primary:hover { background: var(--espresso); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(58,46,40,0.25); }
+.btn-sage { display: inline-flex; align-items: center; gap: 10px; background: var(--sage-dark); color: white; padding: 13px 28px; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; text-decoration: none; font-family: 'Jost', sans-serif; border-radius: 2px; transition: all 0.25s; cursor: pointer; border: none; }
+.btn-sage:hover { background: var(--espresso); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(58,46,40,0.25); }
+.services { background: var(--warm-white); padding: 80px 60px; }
+.section-eyebrow { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sage-dark); font-weight: 500; margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+.section-eyebrow::before { content: ''; display: block; width: 30px; height: 1px; background: var(--sage-dark); }
+.section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(34px, 4vw, 52px); font-weight: 400; color: var(--espresso); line-height: 1.15; margin-bottom: 50px; }
+.section-title em { font-style: italic; color: var(--bark); }
+.cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.card { background: white; padding: 40px 36px; border-bottom: 3px solid var(--sage); transition: all 0.3s; position: relative; overflow: hidden; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
+.card-num { font-family: 'Cormorant Garamond', serif; font-size: 52px; color: var(--stone); font-weight: 300; line-height: 1; margin-bottom: 16px; }
+.card h3 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 500; color: var(--espresso); margin-bottom: 14px; line-height: 1.2; }
+.card p { font-size: 14px; color: var(--text-light); line-height: 1.75; margin-bottom: 24px; }
+.card-link { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage-dark); text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; cursor: pointer; background: none; border: none; font-family: 'Jost', sans-serif; transition: gap 0.2s; }
+.card-link:hover { gap: 14px; }
+section { padding: 80px 60px; }
+.section-inner { max-width: 1200px; margin: 0 auto; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; max-width: 1100px; margin: 0 auto; }
+.about-img-wrap { position: relative; }
+.about-img-wrap img { width: 100%; height: 680px; object-fit: cover; object-position: center 10%; display: block; }
+.about-img-wrap::after { display: none; }
+.about-text { padding: 20px 0; }
+.about-text p { font-size: 15px; color: var(--text-light); line-height: 1.85; margin-bottom: 18px; }
+.credentials { margin-top: 32px; display: flex; flex-direction: column; gap: 10px; }
+.credential { display: flex; align-items: flex-start; gap: 12px; font-size: 13px; color: var(--bark); font-weight: 400; }
+.credential::before { content: '—'; color: var(--sage-dark); flex-shrink: 0; font-weight: 300; }
+.page-hero { background: var(--espresso); padding: 70px 60px 60px; position: relative; overflow: hidden; }
+.page-hero::before { content: ''; position: absolute; top: -50%; right: -10%; width: 400px; height: 400px; border-radius: 50%; background: rgba(138,158,140,0.12); }
+.page-hero-eyebrow { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sage-light); font-weight: 500; margin-bottom: 12px; }
+.page-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 4vw, 58px); font-weight: 400; color: white; line-height: 1.1; margin-bottom: 16px; max-width: 700px; }
+.page-hero p { font-size: 15px; color: rgba(255,255,255,0.72); max-width: 600px; line-height: 1.75; font-weight: 300; }
+.breadcrumb { font-size: 11px; color: rgba(255,255,255,0.5); letter-spacing: 0.1em; margin-bottom: 20px; }
+.breadcrumb a { color: var(--sage-light); text-decoration: none; cursor: pointer; }
+.breadcrumb span { margin: 0 8px; }
+.two-col { display: grid; grid-template-columns: 1.2fr 1fr; gap: 70px; align-items: start; max-width: 1100px; margin: 0 auto; }
+.content-img { width: 100%; height: 460px; object-fit: cover; display: block; }
+.content-block h2 { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 500; color: var(--espresso); margin-bottom: 16px; line-height: 1.2; }
+.content-block h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: var(--espresso); margin-bottom: 12px; }
+.content-block p { font-size: 14px; color: var(--text-light); line-height: 1.85; margin-bottom: 16px; }
+.content-block ul { list-style: none; margin-bottom: 20px; }
+.content-block ul li { font-size: 14px; color: var(--text-light); line-height: 1.75; padding: 6px 0 6px 20px; position: relative; border-bottom: 1px solid var(--stone); }
+.content-block ul li::before { content: '·'; position: absolute; left: 4px; color: var(--sage-dark); font-size: 20px; line-height: 1.4; }
+.highlight-box { background: var(--warm-white); border-left: 3px solid var(--sage-dark); padding: 24px 28px; margin: 20px 0; }
+.highlight-box h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--espresso); margin-bottom: 10px; font-weight: 500; }
+.highlight-box p { font-size: 13px; color: var(--text-light); line-height: 1.8; margin: 0; }
+.photo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; height: 460px; }
+.photo-pair img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.treatments-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--stone); margin: 30px 0; }
+.treatment-item { background: var(--warm-white); padding: 24px 28px; font-size: 13px; color: var(--bark); font-weight: 400; }
+.treatment-item strong { display: block; font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--espresso); margin-bottom: 6px; font-weight: 500; }
+.motivos-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+.motivos-table tr { border-bottom: 1px solid var(--stone); cursor: pointer; transition: background 0.15s; }
+.motivos-table tr:hover { background: var(--warm-white); }
+.motivos-table td { padding: 16px 20px; font-size: 14px; color: var(--bark); }
+.motivos-table td.link { color: var(--sage-dark); font-size: 12px; letter-spacing: 0.08em; font-weight: 500; text-transform: uppercase; text-align: right; }
+.motivos-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--stone); margin: 40px 0; }
+.motivo-item { background: white; padding: 28px 32px; }
+.tech-section { background: var(--espresso); padding: 70px 60px; color: white; }
+.tech-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+.tech-section h2 { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 400; color: white; margin-bottom: 16px; line-height: 1.2; }
+.tech-section p { font-size: 14px; color: rgba(255,255,255,0.72); line-height: 1.85; margin-bottom: 14px; }
+.tech-section img { width: 100%; max-height: 640px; object-fit: contain; }
+.tech-eyebrow { display: inline-block; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--espresso); font-weight: 600; background: var(--gold-light); padding: 5px 14px; border-radius: 2px; margin-bottom: 16px; }
+.cta-banner { background: linear-gradient(135deg, var(--sage-dark) 0%, #3d5e40 100%); padding: 60px; text-align: center; color: white; }
+.cta-banner h2 { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 400; margin-bottom: 14px; }
+.cta-banner p { font-size: 15px; opacity: 0.85; margin-bottom: 28px; }
+.maps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
+.map-block h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--espresso); margin-bottom: 14px; font-weight: 500; }
+.map-container { height: 320px; overflow: hidden; }
+.map-container iframe { width: 100%; height: 100%; border: none; display: block; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1100px; margin: 0 auto; }
+.contact-info h3 { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--espresso); margin-bottom: 24px; font-weight: 500; }
+.contact-item { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px; font-size: 14px; color: var(--text-light); line-height: 1.6; }
+.contact-icon { width: 36px; height: 36px; background: var(--warm-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 16px; }
+.social-row { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+.social-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border: 1.5px solid var(--stone); font-size: 12px; letter-spacing: 0.1em; color: var(--bark); text-decoration: none; font-weight: 500; transition: all 0.2s; border-radius: 2px; }
+.social-btn:hover { border-color: var(--espresso); color: var(--espresso); }
+.ig-strip { background: var(--warm-white); padding: 60px; text-align: center; }
+.ig-strip .section-eyebrow { justify-content: center; }
+.ig-strip .section-eyebrow::before { display: none; }
+.ig-strip h2 { font-family: 'Cormorant Garamond', serif; font-size: 36px; color: var(--espresso); margin-bottom: 8px; font-weight: 400; }
+.ig-strip p { font-size: 14px; color: var(--text-light); margin-bottom: 24px; }
+.wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; height: 58px; background: var(--wa-green); border-radius: 30px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 20px 0 16px; box-shadow: 0 4px 20px rgba(37,211,102,0.4); text-decoration: none; transition: all 0.25s; animation: pulse 2.5s infinite; white-space: nowrap; }
+.wa-float:hover { transform: scale(1.04); }
+@keyframes pulse { 0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); } 50% { box-shadow: 0 4px 30px rgba(37,211,102,0.7), 0 0 0 8px rgba(37,211,102,0.1); } }
+.wa-float svg { width: 26px; height: 26px; fill: white; flex-shrink: 0; }
+.wa-label { color: white; font-family: 'Jost', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.03em; }
+.cta-context { font-size: 12px; color: rgba(255,255,255,0.65); margin-top: 10px; font-family: 'Jost', sans-serif; letter-spacing: 0.04em; }
+.cta-context-dark { font-size: 12px; color: var(--mink); margin-top: 10px; font-family: 'Jost', sans-serif; letter-spacing: 0.04em; }
+.mid-cta { text-align: center; padding: 48px 0 24px; }
+.mid-cta p { font-size: 13px; color: var(--mink); margin-top: 10px; }
+
+/* Before & After Section */
+.ba-strip { padding: 72px 60px; background: var(--warm-white); }
+.ba-subtitle { text-align: center; font-size: 14px; color: var(--mink); margin-bottom: 48px; }
+.ba-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; max-width: 1100px; margin: 0 auto; }
+.ba-card { }
+.ba-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-bottom: 12px; }
+.ba-frame { position: relative; aspect-ratio: 3/4; overflow: hidden; background: var(--cream); }
+.ba-frame img { width: 100%; height: 100%; object-fit: cover; }
+.ba-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; color: var(--text-light); text-align: center; background: #ede9e3; font-family: 'Jost', sans-serif; letter-spacing: 0.05em; text-transform: uppercase; }
+.ba-placeholder.after { background: #dde8de; color: var(--sage-dark); }
+.ba-tag { position: absolute; bottom: 8px; left: 8px; font-family: 'Jost', sans-serif; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; background: rgba(58,46,40,0.75); color: white; padding: 3px 8px; border-radius: 2px; }
+.ba-tag.after { background: rgba(90,122,92,0.85); }
+.ba-label { font-size: 12px; color: var(--mink); text-align: center; font-family: 'Jost', sans-serif; letter-spacing: 0.05em; }
+.ba-disclaimer { text-align: center; font-size: 11px; color: var(--text-light); margin-top: 32px; font-style: italic; }
+
+/* Improved Contact Page */
+.contact-hero-cta { background: var(--sage-dark); padding: 60px; text-align: center; color: white; }
+.contact-hero-cta h2 { font-family: 'Cormorant Garamond', serif; font-size: 42px; font-weight: 400; color: white; margin-bottom: 12px; }
+.contact-hero-cta p { font-size: 15px; color: rgba(255,255,255,0.8); margin-bottom: 32px; }
+.contact-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 60px 0 40px; }
+.contact-step { text-align: center; padding: 40px 30px; border-right: 1px solid var(--border); }
+.contact-step:last-child { border-right: none; }
+.step-num { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 400; color: var(--sage-light); margin-bottom: 12px; }
+.step-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--espresso); margin-bottom: 8px; }
+.step-desc { font-size: 13px; color: var(--mink); line-height: 1.7; }
+
+@media (max-width: 768px) {
+  .ba-grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
+  .ba-strip { padding: 48px 24px; }
+  .contact-steps { grid-template-columns: 1fr; }
+  .contact-step { border-right: none; border-bottom: 1px solid var(--border); }
+  .contact-step:last-child { border-bottom: none; }
+}
+@media (max-width: 600px) { .wa-label { display: none; } .wa-float { width: 58px; height: 58px; padding: 0; border-radius: 50%; justify-content: center; } }
+footer { background: var(--espresso); color: rgba(255,255,255,0.7); padding: 50px 60px 30px; }
+.footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 50px; margin-bottom: 40px; }
+.footer-brand .name { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 500; color: white; margin-bottom: 6px; }
+.footer-brand .tagline { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sage-light); margin-bottom: 18px; }
+.footer-brand p { font-size: 13px; line-height: 1.75; color: rgba(255,255,255,0.6); }
+footer h4 { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sage-light); margin-bottom: 16px; font-weight: 500; }
+footer ul { list-style: none; }
+footer ul li { font-size: 13px; margin-bottom: 8px; color: rgba(255,255,255,0.6); cursor: pointer; transition: color 0.2s; }
+footer ul li:hover { color: white; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; font-size: 12px; color: rgba(255,255,255,0.4); display: flex; justify-content: space-between; align-items: center; letter-spacing: 0.06em; }
+
+/* ── Hamburger ── */
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 8px; z-index: 200; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--espresso); border-radius: 2px; transition: all 0.3s; }
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── Nav active state ── */
+.nav-links > li > a.active { color: var(--espresso); border-bottom: 2px solid var(--sage-dark); }
+
+/* ── Page transitions ── */
+.page.active { animation: pageIn 0.35s ease both; }
+@keyframes pageIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .hamburger { display: flex; }
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 104px;
+    left: 0; right: 0;
+    background: var(--cream);
+    flex-direction: column;
+    border-top: 2px solid var(--sage);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    z-index: 150;
+    max-height: calc(100vh - 104px);
+    overflow-y: auto;
+    gap: 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links > li > a {
+    height: auto;
+    line-height: 1;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--stone);
+    font-size: 13px;
+  }
+  .nav-cta { margin: 12px 24px; border-radius: 2px; }
+  .dropdown { display: none !important; position: static; box-shadow: none; border-top: none; border-left: 3px solid var(--sage); margin-left: 24px; }
+  .nav-links li.open > .dropdown { display: block !important; }
+  .nav-links li.has-dropdown > a::after { content: ' ›'; }
+  .topbar { padding: 8px 20px; font-size: 11px; }
+  nav { padding: 0 20px; }
+  .hero-content { padding: 0 28px; }
+  .hero h1 { font-size: clamp(32px, 8vw, 52px); }
+  .services { padding: 60px 24px; }
+  .cards-grid { grid-template-columns: 1fr; gap: 16px; }
+  section { padding: 60px 24px; }
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-img-wrap img { height: 320px; }
+  .two-col { grid-template-columns: 1fr; gap: 32px; }
+  .photo-pair { grid-template-columns: 1fr; height: auto; }
+  .photo-pair img { height: 260px; }
+  .treatments-list { grid-template-columns: 1fr 1fr; }
+  .motivos-grid { grid-template-columns: 1fr; }
+  .tech-inner { grid-template-columns: 1fr; gap: 40px; }
+  .maps-grid { grid-template-columns: 1fr; gap: 24px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-top { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  footer { padding: 40px 24px 24px; }
+  .page-hero { padding: 50px 24px 40px; }
+  .cta-banner { padding: 48px 24px; }
+  .ig-strip { padding: 48px 24px; }
+  .tech-section { padding: 50px 24px; }
+}
+
+@media (max-width: 600px) {
+  .topbar span { display: none; }
+  .hero { min-height: 520px; height: calc(100svh - 104px); }
+  .hero-content { padding: 0 20px; }
+  .treatments-list { grid-template-columns: 1fr; }
+  .social-row { flex-direction: column; }
+  .btn-primary, .btn-sage { width: 100%; justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>📍 Palermo &nbsp;·&nbsp; Vicente López</span>
+  <a href="https://wa.me/5491124010968" target="_blank">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    +54 9 11 2401-0968
+  </a>
+</div>
+<nav>
+  <div class="nav-brand" onclick="showPage('inicio')">
+    <span class="name">Dra. Victoria Ferrea</span>
+    <span class="tagline">Dermatología · Medicina Estética · Salud Capilar</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showPage('inicio');return false;">Inicio</a></li>
+    <li><a href="#" onclick="showPage('about');return false;">Acerca de</a></li>
+    <li>
+      <a href="#" onclick="showPage('derma');return false;">Dermatología</a>
+      <div class="dropdown">
+        <a href="#" onclick="showPage('acne');return false;">Acné</a>
+        <a href="#" onclick="showPage('rosacea');return false;">Rosácea</a>
+        <a href="#" onclick="showPage('melasma');return false;">Melasma y manchas</a>
+        <a href="#" onclick="showPage('lunares');return false;">Control de lunares</a>
+        <a href="#" onclick="showPage('skincare');return false;">Rutina de skincare</a>
+      </div>
+    </li>
+    <li>
+      <a href="#" onclick="showPage('estetica');return false;">Medicina Estética</a>
+      <div class="dropdown">
+        <a href="#" onclick="showPage('facial');return false;">Estética Facial</a>
+        <a href="#" onclick="showPage('corporal');return false;">Estética Corporal</a>
+      </div>
+    </li>
+    <li>
+      <a href="#" onclick="showPage('capilar');return false;">Salud Capilar</a>
+      <div class="dropdown">
+        <a href="#" onclick="showPage('alopecia');return false;">Alopecia Androgenética</a>
+      </div>
+    </li>
+    <li><a href="#" onclick="showPage('contacto');return false;">Consultorios</a></li>
+    <li><a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20reservar%20un%20turno" target="_blank" class="nav-cta">Reservar Turno</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<a class="wa-float" href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20hacer%20una%20consulta" target="_blank"><span class="wa-label">¿Consultas? Escribime</span><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+<div class="page active" id="page-inicio">
+  <div class="hero">
+    <div class="hero-img" style="background-image:url('fotos/foto inicio.jpg')"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Dermatóloga &amp; Tricóloga</div>
+      <h1>Mejoramos la <em>salud</em> y la <em>calidad</em> de la piel y el cabello</h1>
+      <p class="hero-sub">Con enfoque médico personalizado y resultados progresivos y naturales</p>
+      <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20reservar%20un%20turno" target="_blank" class="btn-sage">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Reservar turno
+      </a>
+      
+    </div>
+  </div>
+  <!-- SECCIÓN ANTES Y DESPUÉS — reemplazá las rutas de imagen con tus fotos reales -->
+  <div class="ba-strip">
+    <div class="section-eyebrow" style="justify-content:center">Resultados reales</div>
+    <div class="section-title" style="text-align:center;margin-bottom:8px">Casos de pacientes</div>
+    <p class="ba-subtitle">Evolución real con abordaje médico personalizado</p>
+    <div class="ba-grid">
+      <div class="ba-card">
+        <div class="ba-pair">
+          <div class="ba-frame">
+            <div class="ba-placeholder">Foto<br>Antes</div>
+            <span class="ba-tag">Antes</span>
+          </div>
+          <div class="ba-frame">
+            <div class="ba-placeholder after">Foto<br>Después</div>
+            <span class="ba-tag after">Después</span>
+          </div>
+        </div>
+        <p class="ba-label">Acné · Tratamiento médico</p>
+      </div>
+      <div class="ba-card">
+        <div class="ba-pair">
+          <div class="ba-frame">
+            <div class="ba-placeholder">Foto<br>Antes</div>
+            <span class="ba-tag">Antes</span>
+          </div>
+          <div class="ba-frame">
+            <div class="ba-placeholder after">Foto<br>Después</div>
+            <span class="ba-tag after">Después</span>
+          </div>
+        </div>
+        <p class="ba-label">Melasma · Abordaje integral</p>
+      </div>
+      <div class="ba-card">
+        <div class="ba-pair">
+          <div class="ba-frame">
+            <div class="ba-placeholder">Foto<br>Antes</div>
+            <span class="ba-tag">Antes</span>
+          </div>
+          <div class="ba-frame">
+            <div class="ba-placeholder after">Foto<br>Después</div>
+            <span class="ba-tag after">Después</span>
+          </div>
+        </div>
+        <p class="ba-label">Alopecia androgenética · PRP</p>
+      </div>
+    </div>
+    <p class="ba-disclaimer">Resultados individuales. Consulta médica previa necesaria.</p>
+  </div>
+
+  <div class="services">
+    <div class="section-eyebrow">Especialidades</div>
+    <div class="section-title">Un abordaje <em>médico integral</em><br>para cada paciente</div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-num">01</div>
+        <h3>Dermatología</h3>
+        <p>Diagnóstico y tratamiento de enfermedades de la piel, y control preventivo de lunares y lesiones pigmentadas. Abordaje médico personalizado orientado a mejorar la salud de la piel y la calidad de vida.</p>
+        <button class="card-link" onclick="showPage('derma')">Ver más →</button>
+      </div>
+      <div class="card">
+        <div class="card-num">02</div>
+        <h3>Medicina Estética</h3>
+        <p>Evaluación integral de la piel y planes adaptados a las necesidades de cada paciente. Resultados progresivos, naturales y coherentes con la expresión de cada persona.</p>
+        <button class="card-link" onclick="showPage('estetica')">Ver más →</button>
+      </div>
+      <div class="card">
+        <div class="card-num">03</div>
+        <h3>Salud Capilar</h3>
+        <p>Abordaje médico integral de la salud capilar con evaluación tricológica especializada y planes orientados a frenar la caída y mejorar la calidad y densidad del cabello.</p>
+        <button class="card-link" onclick="showPage('capilar')">Ver más →</button>
+      </div>
+    </div>
+  </div>
+  <div class="ig-strip">
+    <div class="section-eyebrow">Seguime en redes</div>
+    <h2>Contenido médico en Instagram y TikTok</h2>
+    <p>Tips de skincare, dermatología y salud capilar basados en evidencia.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://instagram.com/dravictoriaferrea" target="_blank" class="social-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> @dravictoriaferrea</a>
+      <a href="https://tiktok.com/@dravictoriaferrea" target="_blank" class="social-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg> @dravictoriaferrea</a>
+    </div>
+  </div>
+  
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-about">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span> Acerca de</div>
+    <div class="page-hero-eyebrow">Perfil profesional</div>
+    <h1>Dra. Victoria Ferrea</h1>
+    <p>Médica especialista en dermatología clínica, medicina estética y tricología.</p>
+  </div>
+  <section>
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <img src='fotos/foto acerca de.jpg' alt="Dra. Victoria Ferrea">
+      </div>
+      <div class="about-text">
+        <div class="section-eyebrow">Formación &amp; Trayectoria</div>
+        <div class="section-title" style="font-size:38px;margin-bottom:20px;">Medicina con <em>propósito</em></div>
+        <p>La Dra. Victoria Ferrea es médica especializada en dermatología clínica, medicina estética y tricología.</p>
+        <p>Se formó en la Universidad de Buenos Aires (UBA) y realizó su residencia en dermatología, donde posteriormente se desempeñó como jefa de residentes.</p>
+        <p>En el área de medicina estética, se especializa en técnicas faciales avanzadas con un enfoque médico, natural y personalizado, basado en evidencia científica.</p>
+        <p>Cuenta con formación de posgrado en oncología cutánea y tricología, y amplia experiencia en el abordaje de patologías cutáneas complejas, distintos tipos de alopecia y salud capilar.</p>
+        <p>Su práctica se centra en mejorar la salud y la calidad de la piel y el cabello mediante tratamientos individualizados y un enfoque médico basado en evidencia.</p>
+        <div class="credentials">
+          <div class="credential">Médica graduada – Universidad de Buenos Aires (UBA)</div>
+          <div class="credential">Residencia en Dermatología · Ex Jefa de Residentes</div>
+          <div class="credential">Posgrado en Oncología Cutánea</div>
+          <div class="credential">Especialización en Tricología y Salud Capilar</div>
+          <div class="credential">Medicina Estética con enfoque en evidencia científica</div>
+        </div>
+        <div style="margin-top:32px;">
+          <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20reservar%20un%20turno" target="_blank" class="btn-sage"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Reservar turno</a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-derma">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span> Dermatología</div>
+    <div class="page-hero-eyebrow">Dermatología clínica</div>
+    <h1>Diagnóstico preciso y abordajes<br>médicos personalizados</h1>
+    <p>A partir de una evaluación médica integral, analizamos el origen de cada alteración cutánea y definimos el abordaje más adecuado, con foco en la salud de la piel y su evolución a largo plazo.</p>
+  </div>
+  <section style="padding-bottom:0">
+    <div class="section-inner">
+      <div class="two-col">
+        <div>
+          <img src='fotos/fotos dermatologia/foto dermatologia.jpg' alt="Consulta dermatológica" class="content-img">
+        </div>
+        <div class="content-block">
+          <div class="section-eyebrow">Motivos de consulta frecuentes</div>
+          <h2>¿Cuándo consultar?</h2>
+          <table class="motivos-table">
+            <tr onclick="showPage('acne')"><td>Acné y cicatrices</td><td class="link">Ver más →</td></tr>
+            <tr onclick="showPage('rosacea')"><td>Rosácea</td><td class="link">Ver más →</td></tr>
+            <tr onclick="showPage('melasma')"><td>Melasma y manchas</td><td class="link">Ver más →</td></tr>
+            <tr onclick="showPage('lunares')"><td>Control de lunares y lesiones pigmentadas</td><td class="link">Ver más →</td></tr>
+            <tr onclick="showPage('skincare')"><td>Rutina de skincare personalizada</td><td class="link">Ver más →</td></tr>
+            <tr><td>Dermatitis y afecciones inflamatorias crónicas</td><td></td></tr>
+            <tr><td>Psoriasis</td><td></td></tr>
+            <tr><td>Hidradenitis supurativa</td><td></td></tr>
+            <tr><td>Alteraciones ungueales</td><td></td></tr>
+            <tr><td>Otras patologías de la piel</td><td></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="section-inner">
+      <img src='fotos/fotos dermatologia/foto dermatologia 2.jpg' alt="Consulta" style="width:100%;height:auto;display:block">
+    </div>
+  </section>
+  <div class="cta-banner">
+    <h2>¿Tenés dudas sobre tu piel?</h2>
+    <p>Consultá con un médico especialista y obtené un abordaje personalizado.</p>
+    <a href="https://wa.me/5491124010968" target="_blank" class="btn-primary"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar turno</a>
+  </div>
+  
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-acne">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span><a onclick="showPage('derma')"> Dermatología</a><span>/</span> Acné</div>
+    <div class="page-hero-eyebrow">Dermatología clínica</div>
+    <h1>Abordaje dermatológico<br>del acné y sus secuelas</h1>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div class="two-col">
+        <div class="content-block">
+          <h2>¿Cómo es el abordaje?</h2>
+          <p>Tratamiento individual y adaptado a cada paciente:</p>
+          <ul>
+            <li>Cremas y/o medicamentos según el tipo y grado de acné</li>
+            <li>Rutina de skincare personalizada para acné activo y sus secuelas</li>
+            <li>Procedimientos médicos con tecnología, indicados según cada caso</li>
+          </ul>
+          <p>El objetivo es controlar la inflamación, prevenir secuelas y mejorar progresivamente la calidad de la piel.</p>
+          <div class="highlight-box">
+            <h4>Secuelas del acné</h4>
+            <p>El acné puede dejar manchas residuales, alteraciones del tono, textura irregular o cicatrices. Definimos la estrategia más conveniente en cada caso, respetando los tiempos de la piel.</p>
+          </div>
+          <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20una%20evaluaci%C3%B3n%20por%20acn%C3%A9" target="_blank" class="btn-primary" style="margin-top:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar evaluación por acné</a>
+          
+        </div>
+        <div>
+          <img src='fotos/foto acne/foto acne1.png' alt="Acné" style="width:100%;height:auto;display:block">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="tech-section">
+    <div class="tech-inner">
+      <div>
+        <div class="tech-eyebrow">Tecnología médica</div>
+        <h2>Luz Pulsada Intensa (LPI/IPL)</h2>
+        <p>El acné y sus secuelas pueden tratarse con tecnología médica como la luz pulsada (LPI/IPL), con el objetivo de actuar sobre lesiones activas, inflamación residual y ciertas alteraciones del tono.</p>
+        <p>Contribuye a mejorar progresivamente la calidad de la piel.</p>
+      </div>
+      <img src='fotos/foto acne/foto acne2.png' alt="Acné tratamiento" style="width:100%;height:auto;display:block">
+    </div>
+  </div>
+  
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-rosacea">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span><a onclick="showPage('derma')"> Dermatología</a><span>/</span> Rosácea</div>
+    <div class="page-hero-eyebrow">Dermatología clínica</div>
+    <h1>Abordaje dermatológico<br>de la rosácea y sus brotes</h1>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div class="two-col">
+        <div class="content-block">
+          <h2>¿Cómo es el abordaje?</h2>
+          <p>El tratamiento se define de manera individual y se adapta a cada paciente:</p>
+          <ul>
+            <li>Tratamiento con cremas y/o medicamentos según el tipo de rosácea</li>
+            <li>Rutina de skincare personalizada para mejorar la tolerancia y reforzar la barrera cutánea</li>
+            <li>Procedimientos médicos con tecnología, indicados según cada caso</li>
+          </ul>
+          <p>El objetivo es reducir brotes, mejorar el enrojecimiento y disminuir la reactividad de la piel.</p>
+          <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20una%20evaluaci%C3%B3n%20por%20ros%C3%A1cea" target="_blank" class="btn-primary" style="margin-top:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar evaluación por rosácea</a>
+          
+        </div>
+        <div>
+          <img src='fotos/foto rosacea/foto rosacea.jpg' alt="Rosácea" class="content-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="tech-section">
+    <div class="tech-inner">
+      <div>
+        <div class="tech-eyebrow">Tecnología médica</div>
+        <h2>Luz Pulsada Intensa (LPI/IPL)<br>aplicada a la rosácea</h2>
+        <p>La rosácea puede tratarse con LPI/IPL para actuar sobre el enrojecimiento persistente, los vasos visibles y disminuir los episodios de reactividad.</p>
+        <p>Contribuye a mejorar progresivamente el aspecto y la tolerancia de la piel.</p>
+      </div>
+      <img src='fotos/foto rosacea/foto rosacea 2.jpg' alt="Tratamiento rosácea" style="max-height:550px;width:100%;object-fit:cover">
+    </div>
+  </div>
+  
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-melasma">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span><a onclick="showPage('derma')"> Dermatología</a><span>/</span> Melasma y manchas</div>
+    <div class="page-hero-eyebrow">Dermatología clínica</div>
+    <h1>Trastornos de la pigmentación</h1>
+    <p>Abordaje dermatológico del melasma y manchas.</p>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div class="two-col">
+        <div class="content-block">
+          <h2>¿Cómo es el abordaje?</h2>
+          <p>El tratamiento se define de manera individual según el tipo de mancha:</p>
+          <ul>
+            <li>Cremas y/o medicamentos según el tipo de mancha</li>
+            <li>Rutina de skincare personalizada para mejorar el tono y proteger la piel</li>
+            <li>Procedimientos médicos con tecnología, indicados de forma selectiva</li>
+          </ul>
+          <p>El objetivo es identificar el origen de la mancha (melasma, lentigos solares, u otras) y mejorar progresivamente el tono de la piel preservando su salud a largo plazo.</p>
+          <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20una%20evaluaci%C3%B3n%20por%20manchas" target="_blank" class="btn-primary" style="margin-top:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar evaluación por manchas</a>
+          
+        </div>
+        <div>
+          <img src='fotos/foto melasma/foto melasma.jpg' alt="Manchas" class="content-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="tech-section">
+    <div class="tech-inner">
+      <div>
+        <div class="tech-eyebrow">Tecnología médica</div>
+        <h2>Luz Pulsada Intensa (LPI/IPL)<br>en melasma y manchas</h2>
+        <p>En pacientes seleccionados, el abordaje puede complementarse con LPI/IPL, siempre integrada a un plan médico global y con indicación precisa.</p>
+        <p>Se define según el tipo de mancha, el fototipo y el estado de la piel, priorizando resultados progresivos y controlados.</p>
+      </div>
+      <img src='fotos/foto melasma/foto melasma 2.jpg' alt="Melasma tratamiento" style="max-height:550px;width:100%;object-fit:cover">
+    </div>
+  </div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-lunares">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span><a onclick="showPage('derma')"> Dermatología</a><span>/</span> Control de lunares</div>
+    <div class="page-hero-eyebrow">Prevención y diagnóstico precoz</div>
+    <h1>Control de lunares y<br>lesiones pigmentadas</h1>
+    <p>Evaluación dermatológica preventiva para la detección precoz de cambios en la piel.</p>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div class="two-col">
+        <div class="content-block">
+          <p>El control periódico de lunares forma parte fundamental del cuidado de la salud de la piel. Su objetivo es detectar de manera precoz cambios que requieran seguimiento médico o estudios complementarios, incluso en ausencia de síntomas.</p>
+          <h3>¿Cuándo consultar?</h3>
+          <ul>
+            <li>Aparición de nuevos lunares</li>
+            <li>Cambios en tamaño, forma o color</li>
+            <li>Lesiones que pican, sangran, duelen o no cicatrizan</li>
+            <li>Antecedentes personales o familiares de cáncer de piel</li>
+          </ul>
+          <h3 style="margin-top:20px">¿Cómo es la evaluación?</h3>
+          <p>Se realiza mediante dermatoscopía, que permite analizar las características de cada lesión, definir si requiere observación o estudio adicional, y establecer la conducta más adecuada. Se orienta a la prevención y detección temprana, con decisiones médicas responsables.</p>
+          <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20un%20control%20de%20lunares" target="_blank" class="btn-primary" style="margin-top:12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar control de lunares</a>
+          
+        </div>
+        <div>
+          <img src='fotos/foto control lunares.jpg' alt="Dermatoscopio" style="width:100%;height:auto;display:block">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="section-inner">
+      <img src='fotos/foto control lunares 2.jpg' alt="Control de lunares" style="width:100%;height:520px;object-fit:cover;object-position:center 55%">
+    </div>
+  </section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-skincare">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span><a onclick="showPage('derma')"> Dermatología</a><span>/</span> Skincare personalizado</div>
+    <div class="page-hero-eyebrow">Dermatología clínica</div>
+    <h1>Rutina de skincare<br>personalizada</h1>
+    <p>Abordaje dermatológico del cuidado diario de la piel.</p>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div class="two-col">
+        <div>
+          <img src='fotos/foto rutina skincare/foto rutina skincare.jpg' alt="Skincare" style="width:100%;height:auto;display:block">
+        </div>
+        <div class="content-block">
+          <h2>¿En qué casos se indica?</h2>
+          <ul>
+            <li>Mejorar la calidad de la piel</li>
+            <li>Aumentar la luminosidad</li>
+            <li>Mejorar la textura</li>
+            <li>Unificar el tono</li>
+            <li>Disminuir o retrasar los signos del envejecimiento</li>
+            <li>Acompañamiento del tratamiento de acné, rosácea y melasma</li>
+          </ul>
+          <p style="margin-top:16px">También está indicada en pacientes que ya probaron productos sin obtener resultados, o que presentan irritación con rutinas no indicadas correctamente.</p>
+          <div class="highlight-box">
+            <h4>Una reflexión importante</h4>
+            <p>En un contexto donde abundan las recomendaciones en redes sociales, consultar con un profesional permite evitar irritaciones innecesarias, pérdida de tiempo y gastos que no se traducen en resultados reales.</p>
+          </div>
+          <h3>¿Cómo se define la rutina?</h3>
+          <p>De manera individual, adaptada a cada caso. Incluye limpieza, hidratación y fotoprotección, junto con activos específicos según las necesidades de cada paciente.</p>
+          <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20una%20rutina%20de%20skincare%20personalizada" target="_blank" class="btn-primary" style="margin-top:12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar rutina personalizada</a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="section-inner">
+      <img src='fotos/foto rutina skincare/foto rutina skincare2.jpg' alt="Skincare personalizado" style="width:100%;height:auto;display:block">
+    </div>
+  </section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-estetica">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span> Medicina Estética</div>
+    <div class="page-hero-eyebrow">Medicina estética</div>
+    <h1>Enfoque médico personalizado</h1>
+    <p>Creemos en una medicina estética que realza sin transformar.</p>
+  </div>
+  <section style="padding-bottom:40px">
+    <div class="section-inner">
+      <p style="font-size:15px;color:var(--text-light);line-height:1.85;margin-bottom:28px">Cada plan se diseña a partir de una evaluación médica integral, considerando el estado de la piel, las necesidades de cada paciente y los resultados esperables. El objetivo es acompañar los cambios del envejecimiento y optimizar la armonía facial y corporal, priorizando resultados progresivos, naturales y coherentes con la expresión de cada persona.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:28px">
+        <img src='fotos/FOTOS ESTETICA/foto estetica.jpg' alt="Estética" style="width:100%;height:360px;object-fit:cover;display:block">
+        <img src='fotos/FOTOS ESTETICA/foto estetica 2.jpg' alt="Estética" style="width:100%;height:360px;object-fit:cover;display:block">
+        <img src='fotos/FOTOS ESTETICA/descarga (4).jpg' alt="Estética" style="width:100%;height:360px;object-fit:cover;display:block">
+      </div>
+      <div class="cards-grid" style="grid-template-columns:repeat(2,1fr)">
+        <div class="card">
+          <div class="card-num">01</div>
+          <h3>Estética Facial</h3>
+          <p>Abordaje médico orientado al cuidado y rejuvenecimiento de la piel del rostro, enfocado en preservar la expresión, la armonía y la identidad facial.</p>
+          <button class="card-link" onclick="showPage('facial')">Ver estética facial →</button>
+        </div>
+        <div class="card">
+          <div class="card-num">02</div>
+          <h3>Estética Corporal</h3>
+          <p>Abordaje médico de la piel corporal orientado a mejorar su aspecto y calidad, mediante tratamientos personalizados indicados según cada caso.</p>
+          <button class="card-link" onclick="showPage('corporal')">Ver estética corporal →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="cta-banner">
+    <h2>Resultados progresivos y naturales</h2>
+    <p>Solicite una evaluación en medicina estética con la Dra. Ferrea.</p>
+    <a href="https://wa.me/5491124010968" target="_blank" class="btn-primary"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar evaluación</a>
+  </div>
+  
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-facial">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span><a onclick="showPage('estetica')"> Medicina Estética</a><span>/</span> Estética Facial</div>
+    <div class="page-hero-eyebrow">Medicina estética</div>
+    <h1>Estética Facial</h1>
+    <p>Rejuvenecimiento facial con enfoque médico.</p>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div class="two-col">
+        <div>
+          <img src='fotos/fotos estetica facial/foto facial 1.jpg' alt="Estética facial" class="content-img">
+        </div>
+        <div class="content-block">
+          <h2>Principales motivos de consulta</h2>
+          <div class="highlight-box"><h4>Calidad de la piel</h4><p>Tratamientos médicos orientados a mejorar la textura, el tono y la luminosidad de la piel.</p></div>
+          <div class="highlight-box"><h4>Líneas de expresión y arrugas</h4><p>Estrategias médicas personalizadas para suavizar los signos del envejecimiento, priorizando resultados progresivos y naturales.</p></div>
+          <div class="highlight-box"><h4>Bioestimulación y armonización facial</h4><p>Abordaje médico orientado a equilibrar las facciones y estimular la producción de colágeno, respetando la identidad y expresión de cada rostro.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="mid-cta" style="padding:40px 60px 0;text-align:center">
+    <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20una%20evaluaci%C3%B3n%20facial" target="_blank" class="btn-primary"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Consultar sobre tratamientos faciales</a>
+    
+  </div>
+  <section style="padding-top:40px;background:var(--warm-white)">
+    <div class="section-inner">
+      <div class="two-col">
+        <div class="content-block">
+          <div class="section-eyebrow">Tratamientos disponibles</div>
+          <h2>A partir de una evaluación médica integral</h2>
+          <div class="treatments-list">
+            <div class="treatment-item"><strong>Peelings médicos</strong>Renovación y mejora de textura</div>
+            <div class="treatment-item"><strong>PRP</strong>Plasma rico en plaquetas</div>
+            <div class="treatment-item"><strong>Mesoterapia</strong>Hidratación profunda</div>
+            <div class="treatment-item"><strong>Dermapen</strong>Microagujas para colágeno</div>
+            <div class="treatment-item"><strong>Toxina botulínica</strong>Suavizado de expresión</div>
+            <div class="treatment-item"><strong>Skinbooster</strong>Calidad e hidratación</div>
+            <div class="treatment-item"><strong>Bioestimuladores</strong>Estimulación de colágeno</div>
+            <div class="treatment-item"><strong>LPI / IPL</strong>Luz pulsada intensa</div>
+            <div class="treatment-item"><strong>Photoshower</strong>Protocolo de colágeno post-sesión</div>
+          </div>
+        </div>
+        <div>
+          <img src='fotos/fotos estetica facial/foto facial 2.jpg' alt="Estética facial" class="content-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="tech-section">
+    <div class="tech-inner">
+      <div>
+        <div class="tech-eyebrow">Tecnología médica</div>
+        <h2>Luz Pulsada Intensa (LPI/IPL)</h2>
+        <p>Integrada estratégicamente a planes faciales personalizados para mejorar manchas, la calidad y el aspecto de la piel.</p>
+        <p>Cada sesión finaliza con un protocolo de estimulación de colágeno (photoshower) como parte del abordaje médico global.</p>
+        <br>
+        <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20una%20evaluaci%C3%B3n%20facial" target="_blank" class="btn-primary"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar evaluación facial</a>
+        
+      </div>
+      <img src='fotos/17_2962n (1).png' alt="Equipo Cellec V">
+    </div>
+  </div>
+  
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-corporal">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span><a onclick="showPage('estetica')"> Medicina Estética</a><span>/</span> Estética Corporal</div>
+    <div class="page-hero-eyebrow">Medicina estética</div>
+    <h1>Estética Corporal</h1>
+    <p>Abordaje médico de la piel y el contorno corporal.</p>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:50px">
+        <img src='fotos/fotos estetica corporal/foto corporal 1.jpg' alt="Estética corporal" style="width:100%;height:400px;object-fit:cover;display:block">
+        <img src='fotos/fotos estetica corporal/Scottsdale Botox Injections _ Adam & Eve Medical Aesthetics.jpg' alt="Estética corporal" style="width:100%;height:400px;object-fit:cover;display:block">
+        <img src='fotos/fotos estetica corporal/Solución para producción de sebo y erupciones.jpg' alt="Estética corporal" style="width:100%;height:400px;object-fit:cover;display:block">
+        <img src='fotos/fotos estetica corporal/foto corporal 2.jpg' alt="Estética corporal" style="width:100%;height:400px;object-fit:cover;display:block">
+      </div>
+      <div class="section-eyebrow">Motivos de consulta frecuentes</div>
+      <div class="treatments-list" style="margin-top:20px">
+        <div class="treatment-item"><strong>Celulitis</strong>Abordaje médico personalizado según el tipo y grado de compromiso</div>
+        <div class="treatment-item"><strong>Adiposidad localizada</strong>Tratamientos médicos integrados a un plan corporal personalizado</div>
+        <div class="treatment-item"><strong>Flacidez</strong>Abordaje médico orientado a mejorar la firmeza y calidad de la piel</div>
+        <div class="treatment-item"><strong>Manchas corporales</strong>Evaluación y abordaje de manchas en manos, escote y piel corporal</div>
+        <div class="treatment-item"><strong>Hiperhidrosis</strong>Tratamiento de sudoración excesiva mediante toxina botulínica</div>
+      </div>
+      <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20una%20evaluaci%C3%B3n%20corporal" target="_blank" class="btn-primary"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar evaluación corporal</a>
+      
+    </div>
+  </section>
+  
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-capilar">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span> Salud Capilar</div>
+    <div class="page-hero-eyebrow">Tricología</div>
+    <h1>Abordaje médico de<br>la salud capilar</h1>
+    <p>El estudio tricológico permite analizar el cabello y el cuero cabelludo en profundidad.</p>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div class="two-col">
+        <div class="content-block">
+          <h2>¿Cuándo consultar?</h2>
+          <ul>
+            <li>Caída excesiva o persistente del cabello</li>
+            <li>Cambios en el grosor, la densidad o la calidad del cabello</li>
+            <li>Afinamiento progresivo o pérdida de volumen</li>
+            <li>Aparición de parches sin pelo</li>
+            <li>Caídas agudas o estacionales</li>
+            <li>Picazón, ardor o descamación persistente del cuero cabelludo</li>
+            <li>Antecedentes familiares de alopecia</li>
+          </ul>
+          <div style="margin-top:28px">
+            <div class="section-eyebrow">Motivos de consulta frecuentes</div>
+            <table class="motivos-table" style="margin-top:10px">
+              <tr onclick="showPage('alopecia')"><td>Alopecia androgenética</td><td class="link">Ver más →</td></tr>
+              <tr><td>Caída excesiva del cabello / efluvios</td><td></td></tr>
+              <tr><td>Debilitamiento capilar</td><td></td></tr>
+              <tr><td>Alopecia areata</td><td></td></tr>
+            </table>
+          </div>
+          <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20una%20evaluaci%C3%B3n%20capilar" target="_blank" class="btn-primary" style="margin-top:16px"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar evaluación capilar</a>
+          
+        </div>
+        <div>
+          <img src='fotos/foto capilar/H99B2456.jpg' alt="Evaluación capilar" style="width:100%;height:auto;display:block">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="section-inner">
+      <img src='fotos/foto capilar/e8c8ed5d-9fcc-466f-9478-92da4fcc4919.jpg' alt="Tratamiento capilar" style="width:100%;height:auto;display:block">
+    </div>
+  </section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-alopecia">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span><a onclick="showPage('capilar')"> Salud Capilar</a><span>/</span> Alopecia androgenética</div>
+    <div class="page-hero-eyebrow">Tricología</div>
+    <h1>Alopecia androgenética</h1>
+    <p>Abordaje médico especializado.</p>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div class="two-col">
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <img src='fotos/foto androgenetica/de5d135d-36d5-43b2-ad3b-2f0105ef1d22.jpg' alt="Consulta" style="width:100%;height:auto;display:block">
+          <img src='fotos/foto androgenetica/H99B2470.jpg' alt="Tubo de sangre" style="width:100%;height:auto;display:block">
+        </div>
+        <div class="content-block">
+          <h2>¿Qué es la alopecia androgenética?</h2>
+          <p>La alopecia androgenética es la forma más frecuente de caída del cabello. Es una alopecia de origen genético y hormonal, por lo que su tratamiento debe ser sostenido en el tiempo.</p>
+          <p>El objetivo del abordaje médico es frenar la progresión de la caída, preservar el cabello existente y mejorar su calidad, adaptando la estrategia a cada etapa.</p>
+          <div class="highlight-box">
+            <h4>¿Por qué elegir un médico tricólogo?</h4>
+            <p>Al tratarse de una condición crónica, requiere controles periódicos y ajustes a lo largo del tiempo. Un tricólogo permite elegir la estrategia más adecuada, ajustar el tratamiento ante cambios, manejar recaídas de manera segura y acompañar el proceso de forma responsable a largo plazo.</p>
+          </div>
+          <h3 style="margin-top:20px">Seguimiento clínico y fotográfico</h3>
+          <p>Se realiza un registro fotográfico estandarizado y comparativo para evaluar objetivamente la evolución del cabello y tomar decisiones médicas basadas en resultados reales.</p>
+          <h3 style="margin-top:20px">Abordaje terapéutico</h3>
+          <ul>
+            <li>Lociones y/o medicación según la etapa y características de la alopecia</li>
+            <li>Mesoterapia capilar para estimular el folículo piloso</li>
+            <li>Plasma rico en plaquetas (PRP) para favorecer la vitalidad capilar</li>
+          </ul>
+          <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20una%20evaluaci%C3%B3n%20por%20alopecia%20androgen%C3%A9tica" target="_blank" class="btn-primary" style="margin-top:16px"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar evaluación</a>
+          <img src='fotos/foto androgenetica/H99B2502.jpg' alt="Plasma" style="width:100%;height:auto;display:block;margin-top:6px">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="section-inner">
+      <img src='fotos/foto androgenetica/e488fd44-82e7-4f39-a2b5-9d431f88f07a.jpg' alt="Consulta androgenética" style="width:100%;height:auto;display:block">
+    </div>
+  </section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<div class="page" id="page-contacto">
+  <div class="page-hero">
+    <div class="breadcrumb"><a onclick="showPage('inicio')">Inicio</a><span>/</span> Contacto</div>
+    <div class="page-hero-eyebrow">Turnos y ubicación</div>
+    <h1>Reservar turno</h1>
+    <p>Atención personalizada con turno previo · Lunes a viernes 14–20 hs</p>
+  </div>
+
+  <!-- CTA principal -->
+  <div style="background:var(--sage-dark);padding:56px 60px;text-align:center">
+    <p style="font-family:'Jost',sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--sage-light);margin-bottom:16px">La forma más rápida</p>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:400;color:white;margin-bottom:12px">Escribime por WhatsApp</h2>
+    <p style="font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto">Contame tu consulta y coordinamos día y horario. Respondo en menos de 24 hs.</p>
+    <a href="https://wa.me/5491124010968?text=Hola%20Dra.%20Victoria%2C%20quisiera%20reservar%20un%20turno" target="_blank" style="display:inline-flex;align-items:center;gap:10px;background:white;color:var(--sage-dark);padding:14px 32px;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;text-decoration:none;border-radius:2px;transition:all 0.25s">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Reservar turno por WhatsApp
+    </a>
+  </div>
+
+  <!-- Pasos del proceso -->
+  <section style="background:var(--cream);padding:64px 60px">
+    <div style="max-width:900px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:48px">
+        <div class="section-eyebrow" style="justify-content:center">¿Cómo funciona?</div>
+        <div class="section-title" style="text-align:center">Tres pasos para tu turno</div>
+      </div>
+      <div class="contact-steps">
+        <div class="contact-step">
+          <div class="step-num">01</div>
+          <div class="step-title">Escribime</div>
+          <p class="step-desc">Mandame un mensaje por WhatsApp contando tu consulta o el motivo de la visita.</p>
+        </div>
+        <div class="contact-step">
+          <div class="step-num">02</div>
+          <div class="step-title">Coordinamos</div>
+          <p class="step-desc">Te respondo en menos de 24 hs con disponibilidad horaria para elegir el turno.</p>
+        </div>
+        <div class="contact-step">
+          <div class="step-num">03</div>
+          <div class="step-title">Consulta</div>
+          <p class="step-desc">Te atiendo en el consultorio con evaluación médica personalizada y sin apuro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Información de contacto</h3>
+          <div class="contact-item"><div class="contact-icon">📱</div><div><strong>WhatsApp</strong><br><a href="https://wa.me/5491124010968" style="color:var(--sage-dark)">+54 9 11 2401-0968</a></div></div>
+          <div class="contact-item"><div class="contact-icon">✉️</div><div><strong>Email</strong><br><a href="mailto:dravictoriaferrea@gmail.com" style="color:var(--sage-dark)">dravictoriaferrea@gmail.com</a></div></div>
+          <div class="contact-item"><div class="contact-icon">🕒</div><div><strong>Horarios</strong><br>Lunes a Viernes · 14 a 20 hs<br><em style="font-size:12px;color:var(--mink)">Atención con turno previo</em></div></div>
+          <div class="contact-item"><div class="contact-icon">📍</div><div><strong>Consultorios</strong><br>Av. San Martín · Vicente López<br>Av. Figueroa Alcorta · Palermo</div></div>
+          <div class="social-row" style="margin-top:24px">
+            <a href="https://instagram.com/dravictoriaferrea" target="_blank" class="social-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> @dravictoriaferrea</a>
+            <a href="https://tiktok.com/@dravictoriaferrea" target="_blank" class="social-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg> @dravictoriaferrea</a>
+          </div>
+        </div>
+        <div>
+          <div class="maps-grid" style="grid-template-columns:1fr;gap:24px">
+            <div class="map-block">
+              <h4 style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;color:var(--espresso);margin-bottom:12px">Vicente López</h4>
+              <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0!2d-58.488!3d-34.525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb4884e2c5c71%3A0x1!2sAv.+San+Mart%C3%ADn+2219%2C+Vicente+L%C3%B3pez!5e0!3m2!1ses!2sar!4v1711234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <p style="font-size:13px;color:var(--text-light);margin-top:8px">Av. San Martín · Vicente López</p>
+            </div>
+            <div class="map-block">
+              <h4 style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;color:var(--espresso);margin-bottom:12px">Palermo</h4>
+              <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0!2d-58.406!3d-34.575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c2fe2c471%3A0x1!2sFigueroa+Alcorta+3501%2C+C1425+CABA!5e0!3m2!1ses!2sar!4v1711234567891" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <p style="font-size:13px;color:var(--text-light);margin-top:8px">Av. Figueroa Alcorta · Palermo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">Dra. Victoria Ferrea</div>
+      <div class="tagline">Dermatología · Medicina Estética · Salud Capilar</div>
+      <p>Atención médica personalizada con foco en la salud de la piel y el cabello.<br>Palermo · Vicente López · Buenos Aires</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li onclick="showPage('derma')">Dermatología</li>
+        <li onclick="showPage('estetica')">Medicina Estética</li>
+        <li onclick="showPage('capilar')">Salud Capilar</li>
+        <li onclick="showPage('lunares')">Control de Lunares</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Palermo · Vicente López</li>
+        <li>📲 +54 9 11 2401-0968</li>
+        <li>✉️ dravictoriaferrea@gmail.com</li>
+        <li>🕒 Lu–Vi 14 a 20 hs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© Dra. Victoria Ferrea – Dermatología · Medicina Estética · Salud Capilar</span>
+    <span>Buenos Aires, Argentina</span>
+  </div>
+</footer>
+
+</div>
+
+<script>
+const pageMap = {
+  inicio:'inicio', about:'about', derma:'derma', acne:'acne', rosacea:'rosacea',
+  melasma:'melasma', lunares:'lunares', skincare:'skincare', estetica:'estetica',
+  facial:'facial', corporal:'corporal', capilar:'capilar', alopecia:'alopecia', contacto:'contacto'
+};
+
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const page = document.getElementById('page-' + id);
+  if (page) {
+    page.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    history.pushState({ page: id }, '', '#' + id);
+    updateActiveNav(id);
+  }
+  closeMenu();
+}
+
+function updateActiveNav(id) {
+  document.querySelectorAll('.nav-links > li > a').forEach(a => a.classList.remove('active'));
+  const topLevel = { acne:'derma', rosacea:'derma', melasma:'derma', lunares:'derma', skincare:'derma', facial:'estetica', corporal:'estetica', alopecia:'capilar' };
+  const target = topLevel[id] || id;
+  document.querySelectorAll('.nav-links > li > a').forEach(a => {
+    const href = a.getAttribute('onclick') || '';
+    if (href.includes("'" + target + "'")) a.classList.add('active');
+  });
+}
+
+function toggleMenu() {
+  const nav = document.querySelector('.nav-links');
+  const btn = document.getElementById('hamburger');
+  nav.classList.toggle('open');
+  btn.classList.toggle('open');
+  btn.setAttribute('aria-label', btn.classList.contains('open') ? 'Cerrar menú' : 'Abrir menú');
+}
+
+function closeMenu() {
+  document.querySelector('.nav-links').classList.remove('open');
+  const btn = document.getElementById('hamburger');
+  btn.classList.remove('open');
+  btn.setAttribute('aria-label', 'Abrir menú');
+}
+
+// Soporte para botón atrás/adelante del navegador
+window.addEventListener('popstate', (e) => {
+  const id = (e.state && e.state.page) || 'inicio';
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const page = document.getElementById('page-' + id);
+  if (page) { page.classList.add('active'); updateActiveNav(id); }
+});
+
+// Carga inicial desde hash
+(function() {
+  const hash = location.hash.replace('#', '');
+  const id = pageMap[hash] || 'inicio';
+  const page = document.getElementById('page-' + id);
+  if (page) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    page.classList.add('active');
+    updateActiveNav(id);
+  }
+})();
+</script>
+</body>
+</html>
